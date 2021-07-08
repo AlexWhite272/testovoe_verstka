@@ -1,0 +1,192 @@
+/*
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+*/
+/*Убираем отступ от окна браузера*/
+body{
+	margin: 0;
+}
+
+nav {
+	padding: 35px;
+	/*подключаем flex*/
+	display: flex;
+	/*выравниваем блоки по разным сторонам*/
+	justify-content: space-between;
+	max-height: 500px;
+	background-color: #403d3d;
+}
+
+.nav1 {
+	font-size: 20px;
+	color:white;
+	align-self: center;
+}
+
+
+.imgnav {
+	height: 200px;
+	padding: 10px;
+	/*выравнивание по линии центра*/
+	align-self: center;
+}
+
+h1 { 
+	padding: 0px 0px 0px 40px;
+	font-size: 35px;
+ }
+
+/*стили для секции 1*/
+.s1 {
+	display: flex;	
+	justify-content: space-around;															
+}
+
+.imgsec {
+	margin:25px;
+	width: 500px;
+	height: 250px;
+}
+
+.sec1 {
+	font-size: 20px;
+	margin: 0px 30px 0px 0px;
+}
+/*-------------------------------*/
+/*Стили для секции 2*/
+.kolonki{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.kolonkiH2{ /*Вынесен из тега section*/
+	text-align: center;
+	margin: 20px 0px 40px 0px;
+}
+.kolonkiBlock1, .kolonkiBlock2{
+	flex: 1;
+
+
+}
+.kolonkiBlock {
+	display: inline-flex;
+	min-height: 200px;
+	max-width: 750px;
+}
+
+.kolonkiImg {
+	min-height: 200px;
+	max-width: 300px;
+}
+
+.kolonkiBlockKos {
+	display: inline-flex;
+	flex-wrap: wrap;
+	padding: 0px 0px 0px 10px;
+
+}
+/*section N3*/
+.vertical{
+	display: flex; 
+	justify-content: space-around;
+	align-items: baseline;
+	min-height: 380px;
+}
+
+.like, .comment, .subscribe {
+	border: 3px solid black;
+	width: 200px;
+	min-height: 380px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0px 40px 0px;
+}
+
+
+.verticalNav {
+	align-items: center;
+	text-align: center;
+	background-color: #b5aeae;
+	padding: 10px;
+	
+}
+
+.verticalMenu {
+	align-items: center;
+	text-align: center;
+}
+
+.verticalTxt{
+	align-items: center;
+	text-align: center;
+	background-color: #b5aeae;
+	position: relative;
+	min-height: 450px;
+
+}
+
+.verticalLink{
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	height: 80px;
+	background-color: #b5aeae;
+	text-align: center;
+}
+
+.verticalButton {
+	text-decoration: none;
+	background-color: white;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+}
+
+.verticalH2 {
+	padding: 30px;
+	text-align: center;
+}
+
+/*нав*/
+footer {
+	height: 75px;
+	border-top: 3px solid black;
+	margin: 0px 0px 0px 20px;
+}
+
+.navH5 {
+	text-align: center;
+}
